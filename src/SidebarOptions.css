@@ -1,0 +1,31 @@
+
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* > means that its targetting a direct child */
+.sidebarOption > .MuiSvgIcon-root{
+    padding: 20px;
+}
+
+/* here ill target the direct children of my sidebar h2 */
+.sidebarOption > h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* hover color */
+
+.sidebarOption:hover {
+    background-color: var(--twitterHoverBlue);
+    border-radius: 30px;
+    color: var(--twitterBlue);
+    transition: color 100ms ease-out;
+}
+
+/* setting the sidebar active color */
+.sidebarOption--active{
+    color: var(--twitterBlue);
+}
